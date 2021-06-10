@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <string>
 
+// 运算抽像类
 class Operation
 {
 // protected:
@@ -20,6 +21,7 @@ public:
     double NumB = 0;
 };
 
+// 加法运算类
 class OperationAdd : public Operation
 {
 private:
@@ -33,6 +35,7 @@ public:
     }
 };
 
+// 减法运算类
 class OperationSub : public Operation
 {
 private:
@@ -46,6 +49,7 @@ public:
     }
 };
 
+// 乘法运算类
 class OperationMul : public Operation
 {
 private:
@@ -59,6 +63,7 @@ public:
     }
 };
 
+// 除法运算类
 class OperationDiv : public Operation
 {
 private:
@@ -72,6 +77,7 @@ public:
     }
 };
 
+// 运算工厂类
 class OperationFactory
 {
 public:
